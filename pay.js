@@ -52,7 +52,7 @@ let inv_params = {
   // InvType: '07'
 }
 const options = require('./conf/config-example')
-create = new ecpay_payment(options)
+const create = new ecpay_payment(options)
 console.log(create)
 
 htm = create.payment_client.aio_check_out_credit_onetime(parameters = base_param, invoice = inv_params)
